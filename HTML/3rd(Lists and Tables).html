@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and tables</title>
+</head>
+
+<body>
+    <h3>Lists</h3>
+    <!-- "type" is used to specify whether we want circle, disc, or square here -->
+    <ul type="disc">
+        <li>This is my first unorderedList</li>
+        <li>This is my Second unorderedList</li>
+        <ul type="square">
+            <li> Here i am using ul in btw ul</li>
+        </ul>
+        <li>This is my Third unorderedList</li>
+
+    </ul>
+
+    <ol type="1">
+        <li>Here is my First ordered list</li>
+        <li>Here is my Second ordered list</li>
+        <ol type="i">
+            <li>Here i am using ol in btw ol</li>
+        </ol>
+        <li>Here is my Third ordered list</li>
+
+
+    </ol>
+
+    <!-- By default "li" tags is of unordered type  -->
+    <li>Two random list just for seeing its functioning</li>
+    <li>Two random list just for seeing its functioning</li>
+    <hr> <!-- Horizontal rule -->
+    <h3>Tables</h3>
+
+    <!-- Inside "table" tag we need to define two type of tags one is its head where all the heading attributtes are there annd the  other is body tag where all information are stored
+    And then after we are using the tag "tr" for making rows and afterwards we puts all heading attributes by using "th" tag
+    but inside "tbody" tag we are using "td" for placing there corresponding information  -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Employee Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Manoj</td>
+                <td>6969</td>
+                <td>paratha corner</td>
+            </tr>
+            <tr>
+                <td>Aman</td>
+                <td>2342</td>
+                <td>Momos parlour</td>
+            </tr>
+            <tr>
+                <td>Deepak</td>
+                <td>8873</td>
+                <td>Bhadwa</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

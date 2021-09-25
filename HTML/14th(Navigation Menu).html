@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            border-radius: 30px;
+            
+        }
+
+        .navbar ul{
+            overflow: auto;
+        } 
+        .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+            
+        }
+        /* "textdecoration" is used for removing underline from anchor tags    */
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color:rgb(246, 247, 248);
+        }
+        .navbar li a:hover{
+            color: red
+        }
+        .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul> 
+                <li><a href="#" >Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <!-- Placeholder attribute is used for written anything inside that  search bar -->
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
+
+<!-- syntax for using navbar
+<header>
+    <nav>
+
+    </nav>
+</header> -->
+
+
+<!-- A navigation bar is usually a list of links, so using the <ul> and <li> elements can help in obtaining it. 
+
+    We will now target the navbar class and apply some CSS to make it look more attractive.
+
+First we will change the color of the navigation bar and make its ends circular.
+
+.navbar{
+            background-color: black;
+            border-radius: 30px;
+          }
+In the next step, we will make all the nav elements come in single horizontal line
+
+  .navbar li{
+            float:left;
+            list-style: none; 
+            margin: 13px 20px;
+        }
+The list-style property is used to remove all the bulleted points in the navigation items.
+
+After writing the above code, the background gets removed as it has been overflown by the parent element. To avoid this, we have to write-
+
+.navbar ul{
+            overflow: auto;
+        }
+Now we will add padding to the all the elements present in the navbar-
+
+.navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: white;
+        }
+We can also add the search bar in the navigation menu. To do this, we have to write-
+
+<div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search this website">
+                </div>
+ This will create a search bar in the navigation menu. We can style the search tag by-
+
+ .search{
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+We can style the menu available in the navigation bar as-
+
+  .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+Within the ‘navbar’, for styling the input tag we can include the border, border-radius, padding, and width as shown above.  -->

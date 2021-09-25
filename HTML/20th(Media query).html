@@ -1,0 +1,62 @@
+
+<!-- What Is Media Query?
+Media queries are used when we want to customize our website's presentation according to the user's screen size. With the help of media queries, you can display different markups based upon the device's general type(mobile, desktop, tablet).
+A media query is a logical operation. Whenever a media query becomes true, then the related CSS is applied to the target element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width: 300px) and (max-width:500px) {
+            #box-2{
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width:800px) {
+            #box-3{
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media (min-width: 800px)  {
+            #box-4{
+                display: block;
+                background-color: green;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">Mai ek iPhone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+    <div class="box" id="box-4">Mai ek widescreen computer hoon</div>
+</body>
+</html>
+
+<!-- In the above code, we have applied the media query to id=box1. So, whenever the page's width is 400px or more than 400px, then the display value of the box1 will be changed from display:none; to display:block; and applied CSS will be visible to the user. -->
+
+<!-- So, that's how you can easily include different media queries depending upon your requirements. Note that we have used and operator to combine two queries to be true. You can also use other operators such as not, only, and comma(,). -->

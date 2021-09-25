@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+
+<body>
+    <h2>FORM's</h2>
+    <hr>
+          <!--   Here we need to provide an backened in "action" attribute where all the froms data is stored -->
+        
+        <form action="backend.php">
+        
+            <!-- On using label tag we are able to touch NAME using cursor and fill the required details care must be taken that "for" attribute data must be same as the ID attribute data of other  "inputs" tags . -->
+        <label for="name">NAME:</label>
+        <div>
+             <input type="text" name="myNAME" id="name">
+        </div>
+        <!--  "div" tag used a block equal to the width of page and play the similar role like that of "br" tag but we generally avoid the use of "br" tag, we prefer it to be  done using css -->
+        <br>
+
+        <!-- Here we have a number of  "input" tags and inside it we need to specify the "type" of that particular section, and only those values are accepted in the form  and a "name" attribute from which we are able to get information about the corresponding one from the backend server . -->
+        <div>
+            Role: <input type="text" name="myROLE">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEMAIL">
+        </div>
+        <br>
+        <div>
+            <input type="date" name="" id="">
+        </div>
+        <br>
+        <!-- basically its upto you to define the name tag somewhere it  is not neccesary to define -->
+        Are you eligible: <input type="checkbox" name="mycheckbox"> <!--Here we can initially checked by ourself using "checked"  attribute-->
+
+        <br>
+        <!-- Here name tag is same "mygender" thats why only one can be selected in btw them using "radio" type -->
+        Gender: Male <input type="radio" name="mygender"> female <input type="radio" name="mygender"> other<input
+            type="radio" name="mygender">
+
+            <div>
+               Write about yourself : <br><textarea name="myTEXT" cols="50" rows="10"></textarea>
+            </div>
+<!-- 
+            Here we are using the label tag in which select  tag is used Care must be taken that "for" attribute data must be equal to "ID" attribute data of "select" tag if they are different then in that case we are not able to write or fill data when directly touch to that predefined data (CAR) not cars here -->
+            <label for="cars">CAR</label>
+            <select name="myCAR" id="cars">
+                <option value="AUDI">SKYSPHERE</option>
+                <option value="LAMBO">LAMBORGINI GT</option>
+            </select>
+
+
+          <br>  
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+
+</body>
+
+</html>

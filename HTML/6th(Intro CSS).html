@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS intro</title>
+   
+    <!-- INTERNAL MODE---- used to define in head tag on which a "selector" p is define which contains "property" color and "value" of color  -->
+   <style>
+        p{
+            color: crimson  ;
+            background-color: cyan !important;
+        }
+        /* !important here makes the background of every text blue  */
+    </style>
+    <!-- EXTERNAL MODE---- That mode will show its color or getting prefrence over other , who are written at last in head tag 
+    Even though we can change  this by using "!important" keyword it will show only the style of website containing this keyword -->
+    
+    <!-- Using link tag we can link it with css files  -->
+    <link rel="stylesheet" href="sixth.css">
+</head>
+<body>
+    <h3>This is CSS tutorial</h3>
+    
+    <!--INLINE MODE ----    "Inline" mode of CSS gets preference over the modes "Internal and External" due to which its shows its style colors here -->
+    <p  style="color:darkorange; background-color:yellow; "> This program will teach you about the basics  of CSS </p>
+    
+    <!-- Only those text color will changes who are written inside selector i.e <p></p> tag  -->
+    <p>This program will teach you about the basics  of CSS</p>
+    <p>Hello</p> hello
+</body>
+</html>
